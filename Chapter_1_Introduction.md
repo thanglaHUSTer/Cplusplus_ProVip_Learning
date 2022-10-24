@@ -163,7 +163,7 @@ $10^8$; 1M = 1,000,000) trong vài giây. Bạn có thể sử dụng thông tin
 định xem thuật toán của bạn có chạy đúng lúc hay không. Ví dụ: nếu kích thước 
 đầu vào tối đa n là 100K (hoặc $10^5$; 1K = 1,000) và thuật toán hiện tại của 
 bạn có độ phức tạp thời gian là $O(n^2)$, thông thường (hoặc máy tính của bạn) sẽ
-thông báo cho bạn rằng $(100K)^2$ hoặc $10^10$ là một con số rất lớn cho biết rằng 
+thông báo cho bạn rằng $(100K)^2$ hoặc $10^{10}$ là một con số rất lớn cho biết rằng 
 thuật toán của bạn sẽ yêu cầu (theo thứ tự) hàng trăm giây để chạy. Do đó, bạn 
 sẽ cần phải nghĩ ra một thuật toán nhanh hơn (và cũng chính xác) để giải quyết 
 vấn đề. Giả sử bạn tìm thấy một cái chạy với độ phức tạp về thời gian là 
