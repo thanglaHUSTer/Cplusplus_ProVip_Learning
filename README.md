@@ -50,4 +50,6 @@ The type safety, which is built into the language, enables developers to write s
     + Rule 1: Identidiers manes can start with an alphabet, an underscore (_), or a dollar sign and followed by alphabets or numbers
     + Rule 2: Identifiers are case sensitive and have no maximum length
 - Valid Examples: `userName`, `user_name`, `_sys_var1`, `$currency`
-- Invalid examples: `1username`, `user name`
+- Invalid Examples: `1username`, `user name`
+
+
