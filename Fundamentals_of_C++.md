@@ -1,6 +1,6 @@
-# C++_ProVip_Learning
+# Fundamentals of C++
 
-## Introductio to C++
+## Module 1 - Introductio to C++
 
 C++ is a modern, powerful language.
 
@@ -52,4 +52,55 @@ The type safety, which is built into the language, enables developers to write s
 - Valid Examples: `userName`, `user_name`, `_sys_var1`, `$currency`
 - Invalid Examples: `1username`, `user name`
 
+## Module 6 - Pointers
+
+### Pointers
+
+- A pointer is a variable that is used to store the address of another variable.
+- Like other variables or constants, it has to be declared before using it in the program.
+- Syntax for variable declaration: ```data_type *var_name;```
+- Example
+
+```C++ 
+int *iptr; // pointer to an integer
+double *dptr; // pointer to a double
+float *fptr; // pointer to a float
+char *cptr; // pointer to a character
+```
+
+### Using pointers in C++
+
+- We define a pointer variable.
+- Assign the address of a variable to a pointer.
+- Finally access the value at the address available in the pointer variable.
+- This is done by using a unary operator * that returns the value of the variable located at the address specified by its operand.
+                    
+```C++
+#include <iostream>
+using namespace std;
+int main(){
+    int var = 20; // actual variable declaration.
+    int *iptr; // pointer variable.
+    iptr = &var; // store address of var in pointer variable.
+    cout << var << endl; // value 20 will be displayed.
+    cout << iptr << endl; // address of var variable will be displayed.
+    cout << *iptr << endl; // access the value at the address available in the pointer variable.
+    return 0;
+}
+```
+
+Output
+
+```
+20
+0x7ffe1d5c6dcc
+20
+```
+
+### Void *Pointers
+
+- The type void * is said to be a special pointer that can hold an address of any object.
+
+
+    
 
