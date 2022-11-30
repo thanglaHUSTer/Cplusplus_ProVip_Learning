@@ -100,7 +100,18 @@ Output
 ### Void *Pointers
 
 - The type void * is said to be a special pointer that can hold an address of any object.
+- It indicates that the associated value is an address but the type of the variable at that address is unknown.
+- Example:
 
+```C++
+double d = 24.5;
+void *vptr = &d;
+//d can be any type
+vptr= = d;
+//vptr can be a pointer to any type
+```
+
+### Const Pointer
 
     
 
