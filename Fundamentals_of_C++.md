@@ -113,5 +113,18 @@ vptr= = d;
 
 ### Const Pointer
 
-    
+- A pointer can be made constant. It is said to be a const pointer.
+
+```C++
+int age = 50;
+int* const iptr = &age; //pointer is constant
+```
+
+Example:
+
+```C++
+int value1 = 5;
+int value2 = 6;
+int* const ptr =&value1; //the const pointer is initialized to the address of value1
+ptr = &value2; //
 
