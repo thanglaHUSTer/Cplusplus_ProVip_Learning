@@ -125,6 +125,93 @@ Example:
 ```C++
 int value1 = 5;
 int value2 = 6;
-int* const ptr =&value1; //the const pointer is initialized to the address of value1
-ptr = &value2; //
+int* const ptr = &value1; //the const pointer is initialized to the address of value1
+ptr = &value2; // error, because once initialized, a const pointer can not be changed.
+ptr = 6; // allowed, ptr points to a non-const int
+```
+### Double Pointers
+
+- A pointer pointing to another pointer. It is said to be double pinter.
+
+```C++
+int age= 50;
+int *ptr = &age; // pointer pointing to the type integer;
+int **pptr = &ptr; // pointer pointing to another pointer ptr
+```
+
+Example:
+
+```C++
+int value1 = 5;
+
+int *ptr = &value1;
+*ptr = 20; // value1 = 20
+
+int **pptr = &ptr;
+**ptr = 30 // value1 = 30
+```
+
+### Pros and Cons of Pointers
+
+Pros:
+- Direct memory access
+- Dynamic memory allocation
+- Helps to build complex data structures like a linked list, stack, queues, trees, graphs etc.
+Cons:
+- Possibilities of segmentation fault due to non-intialization of pointers
+- Dynamically allocated memory needs to be explicitly de allocated
+- Slower than normal variables
+
+### Dynamic memory allocation
+
+The required size of an array is unpredictable, Dynamic memory allocation provides ways to allocate memory space while executing the program or to free space when it is not required.
+- Dynamic memory allocated in the heap
+- Dynamic memory has to be de allocated if it is no longer needed, to avoid memory leaks.
+- Use void* pointers as generic pointers to point to any data types.
+- Operators used in C++ for dynamic memory:
+    + new
+    + delete
+
+#### ```new``` Operator
+
+- ```new``` operator is used to allocated memory dynamically.
+
+syntax
+
+``` type variable = new type; ```
+
+or
+
+``` type variable = new data_type[10]; ```
+
+Example
+
+```C++
+int *ptr = new int(5);
+// or
+int *arrptr = new int[10];
+```
+
+Example
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main(){
+    int *ptr;
+    ptr = new int; // allocating memory to the pointer variable ptr.
+    cout << "Enter the Value: "<< endl;
+    cin >> *ptr;
+    cout << "Value entered is "<<*ptr<<endl;
+    return 0;
+}
+```
+Output
+```
+Enter the Value:
+20
+Value entered is 20
+```
+
 
